@@ -106,6 +106,7 @@ namespace mySync
         private TagLib.IPicture WriteArtwork(IITTrack track, IITArtwork artwork)
         {
             string suffix;
+            // ReSharper disable once SwitchStatementMissingSomeCases
             switch (artwork.Format)
             {
                 case ITArtworkFormat.ITArtworkFormatBMP: suffix = ".bmp"; break;
@@ -114,7 +115,7 @@ namespace mySync
                 default: suffix = ".jpg"; break;
             }
             
-            string temp = Path.GetTempPath() + GetPersistentId(track) + suffix;
+            var temp = Path.GetTempPath() + GetPersistentId(track) + suffix;
             if (File.Exists(temp)) File.Delete(temp);
             artwork.SaveArtworkToFile(temp);
 

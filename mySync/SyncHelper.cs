@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
+using mySync.Properties;
 
 namespace mySync
 {
@@ -34,7 +35,9 @@ namespace mySync
 
                 var broadcaster = configuration.StatusBroadcaster;
 
+                broadcaster.ChangeStatus(Resources.MainFormDeleteing);
                 DeleteUnusedFiles(tempDirectory, broadcaster, androidLinker);
+                broadcaster.ChangeStatus(Resources.MainFormPushing);
                 UploadFiles(broadcaster, androidLinker);
 
                 MessageBox.Show(@"FINISHED!");

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.IO;
+using mySync.Properties;
 
 namespace mySync
 {
@@ -143,6 +144,7 @@ namespace mySync
 
             configuration.StatusBroadcaster.ProgressValue = 0;
             configuration.StatusBroadcaster.ProgressMax = availableTracks.Count;
+            configuration.StatusBroadcaster.ChangeStatus(Resources.MainFormConverting);
 
             foreach (var track in availableTracks)
             {

@@ -118,21 +118,21 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ExternalToolDialogFilter" xml:space="preserve">
-    <value>{0} 主程序|{0}.exe</value>
+    <value>{0} Executable|{0}.exe</value>
   </data>
   <data name="MainFormConnectedToiTunes" xml:space="preserve">
-    <value>已连接到iTunes </value>
+    <value>Connected to iTunes </value>
   </data>
   <data name="MainFormConverting" xml:space="preserve">
-    <value>重编码....</value>
+    <value>Converting....</value>
   </data>
   <data name="MainFormDeleteing" xml:space="preserve">
-    <value>删除无用文件...</value>
+    <value>Delete unused files...</value>
   </data>
   <data name="MainFormNoDevice" xml:space="preserve">
-    <value>无设备连接，程序将退出！</value>
+    <value>No device connected, program will exit!</value>
   </data>
   <data name="MainFormPushing" xml:space="preserve">
-    <value>传输到设备...</value>
+    <value>Pushing to device...</value>
   </data>
 </root>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.lblConnInfo_iTunes = new System.Windows.Forms.Label();
             this.btnGo = new System.Windows.Forms.Button();
             this.cbxDevice = new System.Windows.Forms.ComboBox();
@@ -41,92 +42,62 @@
             // 
             // lblConnInfo_iTunes
             // 
-            this.lblConnInfo_iTunes.AutoSize = true;
-            this.lblConnInfo_iTunes.Location = new System.Drawing.Point(13, 21);
+            resources.ApplyResources(this.lblConnInfo_iTunes, "lblConnInfo_iTunes");
             this.lblConnInfo_iTunes.Name = "lblConnInfo_iTunes";
-            this.lblConnInfo_iTunes.Size = new System.Drawing.Size(41, 12);
-            this.lblConnInfo_iTunes.TabIndex = 1;
-            this.lblConnInfo_iTunes.Text = "label2";
             // 
             // btnGo
             // 
-            this.btnGo.Location = new System.Drawing.Point(9, 138);
+            resources.ApplyResources(this.btnGo, "btnGo");
             this.btnGo.Name = "btnGo";
-            this.btnGo.Size = new System.Drawing.Size(474, 116);
-            this.btnGo.TabIndex = 2;
-            this.btnGo.Text = "GO!";
             this.btnGo.UseVisualStyleBackColor = true;
             this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
             // 
             // cbxDevice
             // 
+            resources.ApplyResources(this.cbxDevice, "cbxDevice");
             this.cbxDevice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxDevice.FormattingEnabled = true;
-            this.cbxDevice.Location = new System.Drawing.Point(15, 52);
             this.cbxDevice.Name = "cbxDevice";
-            this.cbxDevice.Size = new System.Drawing.Size(423, 20);
-            this.cbxDevice.TabIndex = 3;
             // 
             // txtBitrate
             // 
-            this.txtBitrate.Location = new System.Drawing.Point(15, 79);
+            resources.ApplyResources(this.txtBitrate, "txtBitrate");
             this.txtBitrate.Name = "txtBitrate";
-            this.txtBitrate.Size = new System.Drawing.Size(399, 21);
-            this.txtBitrate.TabIndex = 4;
-            this.txtBitrate.Text = "128";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(420, 82);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 12);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Kbps";
             // 
             // chkForceOverride
             // 
-            this.chkForceOverride.AutoSize = true;
+            resources.ApplyResources(this.chkForceOverride, "chkForceOverride");
             this.chkForceOverride.Checked = true;
             this.chkForceOverride.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkForceOverride.Location = new System.Drawing.Point(15, 116);
             this.chkForceOverride.Name = "chkForceOverride";
-            this.chkForceOverride.Size = new System.Drawing.Size(108, 16);
-            this.chkForceOverride.TabIndex = 6;
-            this.chkForceOverride.Text = "Force Override";
             this.chkForceOverride.UseVisualStyleBackColor = true;
             // 
             // progress
             // 
-            this.progress.Location = new System.Drawing.Point(9, 260);
+            resources.ApplyResources(this.progress, "progress");
             this.progress.Name = "progress";
-            this.progress.Size = new System.Drawing.Size(474, 23);
-            this.progress.TabIndex = 7;
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(445, 48);
+            resources.ApplyResources(this.btnRefresh, "btnRefresh");
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
-            this.btnRefresh.TabIndex = 8;
-            this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // lblStatus
             // 
-            this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(468, 82);
+            resources.ApplyResources(this.lblStatus, "lblStatus");
             this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(41, 12);
-            this.lblStatus.TabIndex = 9;
-            this.lblStatus.Text = "Ready.";
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(521, 287);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.progress);
@@ -137,7 +108,6 @@
             this.Controls.Add(this.btnGo);
             this.Controls.Add(this.lblConnInfo_iTunes);
             this.Name = "MainForm";
-            this.Text = "mySync by CharlieJiang";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

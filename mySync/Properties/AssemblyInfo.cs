@@ -8,11 +8,11 @@ using System.Windows;
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
 [assembly: AssemblyTitle("mySync")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A tool to sync the music library on the iTunes on the PC(Windows!) to Android devices.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Charlie Jiang")]
 [assembly: AssemblyProduct("mySync")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyCopyright("Copyright © CharlieJiang 2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

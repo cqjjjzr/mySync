@@ -79,11 +79,38 @@ namespace mySync.Properties {
         }
         
         /// <summary>
+        ///   查找类似 重编码.... 的本地化字符串。
+        /// </summary>
+        internal static string MainFormConverting {
+            get {
+                return ResourceManager.GetString("MainFormConverting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 删除无用文件... 的本地化字符串。
+        /// </summary>
+        internal static string MainFormDeleteing {
+            get {
+                return ResourceManager.GetString("MainFormDeleteing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 无设备连接，程序将退出！ 的本地化字符串。
         /// </summary>
         internal static string MainFormNoDevice {
             get {
                 return ResourceManager.GetString("MainFormNoDevice", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 传输到设备... 的本地化字符串。
+        /// </summary>
+        internal static string MainFormPushing {
+            get {
+                return ResourceManager.GetString("MainFormPushing", resourceCulture);
             }
         }
     }

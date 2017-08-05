@@ -23,17 +23,20 @@ namespace mySync
                 Directory.Delete(tempDirectory, true);
                 Directory.CreateDirectory(tempDirectory);
             }
-
+            
             var iTunesLinker = new iTunesLinker();
             var androidLinker = new AndroidLinker(configuration.DeviceId);
 
             iTunesLinker.MakePlaylist(tempDirectory, FileWrote);
-            iTunesLinker.CheckSync(CountDown, configuration, tempDirectory, out _waiter);
+            iTunesLinker.CheckSync(CountDown, configuration, tempDirectory, SetWaiter);
 
             new Thread(() => {
                 _waiter.Await();
 
                 var broadcaster = configuration.StatusBroadcaster;
+
+                broadcaster.ChangeStatus(Resources.MainFormRebuilding);
+                iTunesLinker.RebuildAllTags(tempDirectory, broadcaster);
 
                 broadcaster.ChangeStatus(Resources.MainFormDeleteing);
                 DeleteUnusedFiles(tempDirectory, broadcaster, androidLinker);
@@ -67,7 +70,7 @@ namespace mySync
             broadcaster.ProgressMax = _outs.Count;
             broadcaster.ProgressValue = 0;
 
-            foreach (string file in _outs)
+            foreach (var file in _outs)
             {
                 androidLinker.Upload(file, "/sdcard/Music");
                 broadcaster.IncProgress();
@@ -83,6 +86,11 @@ namespace mySync
         private void FileWrote(string path)
         {
             _outs.Add(path);
+        }
+
+        private void SetWaiter(CountDownLatch waiter)
+        {
+            _waiter = waiter;
         }
     }
 

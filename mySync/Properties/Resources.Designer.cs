@@ -113,5 +113,14 @@ namespace mySync.Properties {
                 return ResourceManager.GetString("MainFormPushing", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   查找类似 重建曲目标签... 的本地化字符串。
+        /// </summary>
+        internal static string MainFormRebuilding {
+            get {
+                return ResourceManager.GetString("MainFormRebuilding", resourceCulture);
+            }
+        }
     }
 }

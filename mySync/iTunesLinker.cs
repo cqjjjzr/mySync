@@ -1,5 +1,6 @@
 ﻿using iTunesLib;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -14,6 +15,12 @@ namespace mySync
         private readonly IiTunes _iTunes = new iTunesApp();
         private Action<string> _funcCountdown;
 
+        private List<IITFileOrCDTrack> AvailableTracks => 
+            (from IITTrack track
+            in _iTunes.LibraryPlaylist.Tracks
+            where (track as IITFileOrCDTrack)?.Location != null
+            select (IITFileOrCDTrack) track).ToList();
+
         public iTunesLinker()
         {
             ThreadPool.SetMaxThreads(4, 4);
@@ -25,7 +32,7 @@ namespace mySync
         {
             if (!(track is IITFileOrCDTrack)) return;
             var inPath = ((IITFileOrCDTrack)track).Location;
-            var outPath = (outDirectory + GetPersistentId(track) + ".m4a");
+            var outPath = (outDirectory + GetTrackFilename(track));
 
             if (inPath == null) return;
 
@@ -38,7 +45,6 @@ namespace mySync
                     BitrateKbps = conf.BitrateKbps,
                     Start = track.Start,
                     End = track.Finish,
-                    TagInfoProvide = new TrackTagInfo { Track = track },
                     StatusBroadcaster = conf.StatusBroadcaster
                 });
             }
@@ -53,16 +59,26 @@ namespace mySync
         {
             var convertInfo = (ConvertInfo)param;
             FFmpegConverter.Convert(convertInfo);
-            RebuildTag(convertInfo);
 
             _funcCountdown(convertInfo.OutPath);
             convertInfo.StatusBroadcaster.IncProgress();
         }
 
-        private void RebuildTag(ConvertInfo convertInfo)
+        public void RebuildAllTags(string tempDirectory, MainForm.StatusBroadcaster broadcaster)
         {
-            var mediaFile = TagLib.File.Create(convertInfo.OutPath);
-            var track = (IITFileOrCDTrack) ((TrackTagInfo) convertInfo.TagInfoProvide).Track;
+            var availableTracks = AvailableTracks;
+            broadcaster.ProgressMax = availableTracks.Count;
+            broadcaster.ProgressValue = 0;
+            foreach (var track in AvailableTracks)
+            {
+                RebuildTag(tempDirectory + GetTrackFilename(track), track);
+                broadcaster.IncProgress();
+            }
+        }
+
+        private void RebuildTag(string filename, IITFileOrCDTrack track)
+        {
+            var mediaFile = TagLib.File.Create(filename);
 
             var tag = mediaFile.Tag;
             tag.Title = track.Name;
@@ -125,32 +141,24 @@ namespace mySync
             File.Delete(temp);
             return picture;
         }
-
-        private class TrackTagInfo : ConvertInfo.ITagInfo
-        {
-            public IITTrack Track { get; set; }
-        }
         
-        public void CheckSync(Action<string> funcCountDown, SyncConfiguration configuration, string tempDirectory, out CountDownLatch waiter)
+        public void CheckSync(Action<string> funcCountDown, SyncConfiguration configuration, string tempDirectory, Action<CountDownLatch> funcSetWaiter)
         {
             _funcCountdown = funcCountDown;
             EnsureAllTrackAvailable();
 
-            var availableTracks = 
-                (from IITTrack track
-                in _iTunes.LibraryPlaylist.Tracks
-                where (track as IITFileOrCDTrack)?.Location != null
-                select track).ToList();
+            var availableTracks = AvailableTracks;
 
             configuration.StatusBroadcaster.ProgressValue = 0;
             configuration.StatusBroadcaster.ProgressMax = availableTracks.Count;
             configuration.StatusBroadcaster.ChangeStatus(Resources.MainFormConverting);
 
+            funcSetWaiter(new CountDownLatch(availableTracks.Count));
+
             foreach (var track in availableTracks)
             {
                 AsyncConvert(track, tempDirectory, configuration);
             }
-            waiter = new CountDownLatch(availableTracks.Count);
         }
 
         private void EnsureAllTrackAvailable()
@@ -183,7 +191,7 @@ namespace mySync
                     from IITTrack track 
                     in playlist.Tracks
                     where (track as IITFileOrCDTrack)?.Location != null
-                    select "./" + GetPersistentId(track) + ".m4a";
+                    select "./" + GetTrackFilename(track);
 
                 // ReSharper disable once LocalizableElement
                 File.WriteAllText(filename, string.Join("\n", lines) + "\n", Encoding.UTF8);
@@ -206,6 +214,11 @@ namespace mySync
             object nobj = obj;
             _iTunes.GetITObjectPersistentIDs(ref nobj, out high, out low);
             return ((ulong) high << 32) + (ulong) low;
+        }
+
+        private string GetTrackFilename(IITObject track)
+        {
+            return GetPersistentId(track) + ".m4a";
         }
     }
 }

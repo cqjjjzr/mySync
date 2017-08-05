@@ -54,9 +54,9 @@
             // 
             // cbxDevice
             // 
-            resources.ApplyResources(this.cbxDevice, "cbxDevice");
             this.cbxDevice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxDevice.FormattingEnabled = true;
+            resources.ApplyResources(this.cbxDevice, "cbxDevice");
             this.cbxDevice.Name = "cbxDevice";
             // 
             // txtBitrate
@@ -72,8 +72,6 @@
             // chkForceOverride
             // 
             resources.ApplyResources(this.chkForceOverride, "chkForceOverride");
-            this.chkForceOverride.Checked = true;
-            this.chkForceOverride.CheckState = System.Windows.Forms.CheckState.Checked;
             this.chkForceOverride.Name = "chkForceOverride";
             this.chkForceOverride.UseVisualStyleBackColor = true;
             // 

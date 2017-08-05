@@ -76,10 +76,7 @@ namespace mySync
         public int BitrateKbps;
         public long Start;
         public long End;
-
-        public ITagInfo TagInfoProvide;
+        
         public MainForm.StatusBroadcaster StatusBroadcaster { get; set; }
-
-        public interface ITagInfo { }
     }
 }

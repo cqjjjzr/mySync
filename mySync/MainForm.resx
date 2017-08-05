@@ -117,169 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Kbps</value>
-  </data>
-  <data name="&gt;&gt;btnGo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="progress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>474, 23</value>
-  </data>
-  <data name="&gt;&gt;cbxDevice.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="lblStatus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>468, 82</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>MainForm</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;btnGo.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="chkForceOverride.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;txtBitrate.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;cbxDevice.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;txtBitrate.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="lblConnInfo_iTunes.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="chkForceOverride.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 16</value>
-  </data>
-  <data name="&gt;&gt;progress.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 12</value>
-  </data>
-  <data name="&gt;&gt;lblConnInfo_iTunes.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btnGo.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;chkForceOverride.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;btnRefresh.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;chkForceOverride.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btnRefresh.Location" type="System.Drawing.Point, System.Drawing">
-    <value>445, 48</value>
-  </data>
-  <data name="&gt;&gt;btnRefresh.Name" xml:space="preserve">
-    <value>btnRefresh</value>
-  </data>
-  <data name="&gt;&gt;txtBitrate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="progress.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;progress.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;lblStatus.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="cbxDevice.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;cbxDevice.Name" xml:space="preserve">
-    <value>cbxDevice</value>
-  </data>
-  <data name="cbxDevice.Size" type="System.Drawing.Size, System.Drawing">
-    <value>423, 20</value>
-  </data>
-  <data name="txtBitrate.Text" xml:space="preserve">
-    <value>128</value>
-  </data>
-  <data name="lblConnInfo_iTunes.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;progress.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="btnGo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>474, 116</value>
-  </data>
-  <data name="chkForceOverride.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 116</value>
-  </data>
-  <data name="txtBitrate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>399, 21</value>
-  </data>
-  <data name="&gt;&gt;lblConnInfo_iTunes.Name" xml:space="preserve">
-    <value>lblConnInfo_iTunes</value>
-  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="lblConnInfo_iTunes.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 21</value>
-  </data>
-  <data name="txtBitrate.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="lblStatus.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;btnGo.Name" xml:space="preserve">
-    <value>btnGo</value>
-  </data>
-  <data name="&gt;&gt;lblStatus.Name" xml:space="preserve">
-    <value>lblStatus</value>
-  </data>
-  <data name="&gt;&gt;lblStatus.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="lblConnInfo_iTunes.Size" type="System.Drawing.Size, System.Drawing">
     <value>41, 12</value>
   </data>
-  <data name="&gt;&gt;btnRefresh.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="lblConnInfo_iTunes.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="lblConnInfo_iTunes.Text" xml:space="preserve">
+    <value>label2</value>
   </data>
-  <data name="&gt;&gt;btnGo.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;lblConnInfo_iTunes.Name" xml:space="preserve">
+    <value>lblConnInfo_iTunes</value>
   </data>
-  <data name="lblStatus.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="progress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 260</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 12</value>
+  <data name="&gt;&gt;lblConnInfo_iTunes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;lblConnInfo_iTunes.Parent" xml:space="preserve">
     <value>$this</value>
@@ -287,79 +146,217 @@
   <data name="&gt;&gt;lblConnInfo_iTunes.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>420, 82</value>
+  <data name="btnGo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 138</value>
   </data>
-  <data name="lblStatus.Text" xml:space="preserve">
-    <value>就绪.</value>
+  <data name="btnGo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>566, 116</value>
   </data>
-  <data name="&gt;&gt;lblStatus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="chkForceOverride.Text" xml:space="preserve">
-    <value>强制覆盖</value>
-  </data>
-  <data name="lblStatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 12</value>
-  </data>
-  <data name="btnRefresh.Text" xml:space="preserve">
-    <value>刷新</value>
-  </data>
-  <data name="cbxDevice.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 52</value>
-  </data>
-  <data name="btnRefresh.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+  <data name="btnGo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="btnGo.Text" xml:space="preserve">
     <value>GO!</value>
   </data>
-  <data name="&gt;&gt;chkForceOverride.Name" xml:space="preserve">
-    <value>chkForceOverride</value>
+  <data name="&gt;&gt;btnGo.Name" xml:space="preserve">
+    <value>btnGo</value>
   </data>
-  <data name="chkForceOverride.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="&gt;&gt;btnGo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="btnGo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 138</value>
+  <data name="&gt;&gt;btnGo.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;progress.Name" xml:space="preserve">
-    <value>progress</value>
+  <data name="&gt;&gt;btnGo.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>mySync by CharlieJiang</value>
+  <data name="cbxDevice.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 52</value>
   </data>
-  <data name="btnRefresh.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="cbxDevice.Size" type="System.Drawing.Size, System.Drawing">
+    <value>423, 20</value>
   </data>
-  <data name="&gt;&gt;txtBitrate.Name" xml:space="preserve">
-    <value>txtBitrate</value>
+  <data name="cbxDevice.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="lblConnInfo_iTunes.Text" xml:space="preserve">
-    <value>label2</value>
+  <data name="&gt;&gt;cbxDevice.Name" xml:space="preserve">
+    <value>cbxDevice</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>521, 287</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;cbxDevice.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;cbxDevice.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;cbxDevice.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
   <data name="txtBitrate.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 79</value>
   </data>
-  <data name="&gt;&gt;btnRefresh.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="txtBitrate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>399, 21</value>
+  </data>
+  <data name="txtBitrate.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="txtBitrate.Text" xml:space="preserve">
+    <value>128</value>
+  </data>
+  <data name="&gt;&gt;txtBitrate.Name" xml:space="preserve">
+    <value>txtBitrate</value>
+  </data>
+  <data name="&gt;&gt;txtBitrate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtBitrate.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtBitrate.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>420, 82</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 12</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Kbps</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="chkForceOverride.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chkForceOverride.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 116</value>
+  </data>
+  <data name="chkForceOverride.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 16</value>
+  </data>
+  <data name="chkForceOverride.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="chkForceOverride.Text" xml:space="preserve">
+    <value>强制覆盖</value>
+  </data>
+  <data name="&gt;&gt;chkForceOverride.Name" xml:space="preserve">
+    <value>chkForceOverride</value>
+  </data>
+  <data name="&gt;&gt;chkForceOverride.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chkForceOverride.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;chkForceOverride.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="progress.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 260</value>
+  </data>
+  <data name="progress.Size" type="System.Drawing.Size, System.Drawing">
+    <value>566, 23</value>
+  </data>
+  <data name="progress.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;progress.Name" xml:space="preserve">
+    <value>progress</value>
+  </data>
+  <data name="&gt;&gt;progress.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;progress.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;progress.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnRefresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>444, 49</value>
+  </data>
+  <data name="btnRefresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 23</value>
+  </data>
+  <data name="btnRefresh.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnRefresh.Text" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Name" xml:space="preserve">
+    <value>btnRefresh</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnRefresh.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblStatus.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblStatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>461, 82</value>
+  </data>
+  <data name="lblStatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 12</value>
+  </data>
+  <data name="lblStatus.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="lblStatus.Text" xml:space="preserve">
+    <value>就绪.</value>
+  </data>
+  <data name="&gt;&gt;lblStatus.Name" xml:space="preserve">
+    <value>lblStatus</value>
+  </data>
+  <data name="&gt;&gt;lblStatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblStatus.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblStatus.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>zh</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>587, 287</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>mySync by CharlieJiang</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

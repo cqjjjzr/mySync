@@ -26,6 +26,7 @@ namespace mySync
             cbxDevice.Enabled = false;
             txtBitrate.Enabled = false;
             chkForceOverride.Enabled = false;
+            btnRefresh.Enabled = false;
 
             Sync();
         }

@@ -135,4 +135,7 @@
   <data name="MainFormPushing" xml:space="preserve">
     <value>传输到设备...</value>
   </data>
+  <data name="MainFormRebuilding" xml:space="preserve">
+    <value>重建曲目标签...</value>
+  </data>
 </root>

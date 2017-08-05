@@ -135,4 +135,7 @@
   <data name="MainFormPushing" xml:space="preserve">
     <value>Pushing to device...</value>
   </data>
+  <data name="MainFormRebuilding" xml:space="preserve">
+    <value>Rewriting tags...</value>
+  </data>
 </root>
